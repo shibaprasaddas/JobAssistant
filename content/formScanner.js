@@ -1,1 +1,13 @@
-console.log("Job Assistant content script loaded.");
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+
+    if (message.action === "scanForm") {
+
+        console.log("Scan request received.");
+
+        sendResponse({
+            status: "Connected to webpage ✔"
+        });
+
+    }
+
+});

@@ -5,7 +5,8 @@
   "description": "Automatically scans and assists with filling job application forms.",
 
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "tabs"
   ],
 
   "host_permissions": [
