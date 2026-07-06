@@ -1,1 +1,1 @@
-ECHO is on.
+console.log("Job Assistant content script loaded.");

@@ -1,1 +1,19 @@
-ECHO is on.
+body {
+    width: 320px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#status {
+    margin-top: 15px;
+}

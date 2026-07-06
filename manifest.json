@@ -1,1 +1,30 @@
-ECHO is on.
+{
+  "manifest_version": 3,
+  "name": "Job Assistant",
+  "version": "1.0.0",
+  "description": "Automatically scans and assists with filling job application forms.",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+
+  "background": {
+    "service_worker": "background/serviceWorker.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/formScanner.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
